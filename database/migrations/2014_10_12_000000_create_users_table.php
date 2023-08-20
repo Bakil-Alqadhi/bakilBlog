@@ -21,7 +21,7 @@ return new class extends Migration
             $table->string('password');
             $table->string('username')->nullable();
             $table->string('picture')->nullable();
-            $table->string('biography');
+            $table->text('biography');
             $table->integer('type')->default(2);
             $table->integer('blocked')->default(0);
             $table->integer('direct_publish')->default(0);
